@@ -1,0 +1,76 @@
+.item__input {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+
+  .item__input_checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+
+  .item__input_text {
+    width: 100%;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-left: 5px;
+  }
+
+  label {
+    font-size: 18px;
+  }
+
+  .task__completed {
+    text-decoration: line-through;
+  }
+}
+
+.item__date {
+  font-size: 18px;
+}
+
+.item__date_completed {
+  color: red;
+}
+
+.item__btn {
+  width: 200px;
+  font-size: 16px;
+  padding: 10px;
+  margin: 15px 10px 0 0;
+  border: 1px solid grey;
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn__disabled {
+  opacity: 0.7;
+
+  &:hover {
+    cursor: not-allowed;
+  }
+}
+
+.item__file {
+  margin: 15px 0;
+
+  button {
+    font-size: 18px;
+    color: green;
+    border: 0;
+    background: transparent;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.item__error {
+  color: red;
+}
